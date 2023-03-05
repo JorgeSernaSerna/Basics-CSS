@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Positions</title>
+        <link rel="stylesheet" href="positionsStyle.css">
+    </head>
+    <body>
+        <article id="topic-section">
+            <h1>Practicing with CSS</h1>
+            <br>
+
+            <h2 class="h2 topics">Topics</h2>
+            <ul>
+                <li class="li selectors"><a class="text-item" href="index.html#topic-section">Selectors</a></li>
+                <li class="li box-model"><a class="text-item" href="box-model.html">Box Model</a></li>
+                <li class="li positions"><a class="text-item" href="positions.html">Position</a>
+                    <ul>
+                        <li><a href="positions.html#static-position">Static</a></li>
+                        <li><a href="positions.html#relative-position">Relative</a></li>
+                        <li><a href="positions.html#absolute-position">Absolute</a></li>
+                        <li><a href="positions.html#fixed-position">Fixed</a></li>
+                        <li><a href="positions.html#sticky-position">Sticky</a></li>
+                    </ul>
+                </li>
+                <li class="li example"><a class="text-item" href="example.html#start">Example</a></li>
+                <li class="li colors"><a class="text-item" href="colors.html">Colors</a></li>
+                <li class="li measurement"><a class="text-item" href="measurementUnits.html">Measurement Units</a></li>
+            </ul>
+        </article>
+        <br>
+        <!--**********************************************************************************-->
+
+        <article id="static-position">
+            <h2 class="static-title">Positions - static</h2>
+        </article>
+
+        <article id="relative-position">
+            <h2 class="relative-title">Positions - relative</h2>
+            <div class="relative-parent">
+                <div class="relative-item">There is another item like this one just below but it lost its original position👇</div>
+                <div class="relative-item">This is the item lost in position</div>
+                <div class="relative-item">There is another item like this one just above but it lost its original position☝️</div>
+            </div>
+        </article>
+
+        <article id="absolute-position">
+            <h2 class="absolute-title">Positions - absolute</h2>
+        </article>
+
+        <article id="fixed-position">
+            <h2 class="fixed-title">Positions - fixed</h2>
+            <div class="fixed-parent">
+                <p>Fixed element takes a position considering the HTML document as reference</p>
+                <div class="fixed-element">This is the div with position: fixed;</div>
+            </div>
+        </article>
+
+        <article id="sticky-position">
+            <h2 class="sticky-title">Positions - sticky</h2>
+            <div class="sticky-parent">
+                <p>Es una combinacion entre "relative" y "fixed", las propiedades top, left... no mueven al elemento sino que sirven como referencia y desde ese punto el elemento dejara de comportarse relative y comenzara a comportarse fixed</p>
+                <br>
+                <p>Debe de ser hijo directo del "body". Sino su elemento padre container debe tener dimensiones definidas y solo será sticky dentro de las dimensiones de su contenedor padre.</p>
+                <div class="sticky-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aliquid earum enim, sunt unde sequi porro iste optio debitis mollitia, accusamus quam illum tenetur quae corporis suscipit! Eum, veritatis nihil!</div>
+            </div>      
+        </article>
+
+        <article id="z-index-position">
+            <h2 class="z-index-title">Positions - z-index</h2>
+            <div class="z-index-parent">
+                <p></p>
+                <div></div>
+            </div>      
+        </article>
+    </body>
+</html>

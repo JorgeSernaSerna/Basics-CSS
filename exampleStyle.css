@@ -1,0 +1,89 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+}
+.go-top{
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin-left: 1220px;
+    box-shadow: 2px 2px 5px black;
+    background-color: blueviolet;
+
+
+    position: sticky;
+    top: 570px;
+    z-index: 250;
+}
+.go-top:hover{
+    background-color: rgb(165, 101, 225);
+}
+header{   /*recuadro morado en el top de pagina*/
+    background-color: plum;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.content{
+    margin: 0 10px; /*solo margen a los lados*/
+}
+h2{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#topic-section a{
+    font-size: 25px;
+    text-decoration: none;
+}
+/***********************************************************************/
+.slide{
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgb(196, 246, 246);
+}
+.slide:nth-child(odd){
+    background-color: rgb(247, 188, 137);
+}
+.slide-title{
+    text-align: center;
+    position: sticky;
+    top: 80px; /*cuando llegue a 80px del tope, este se quedara pegado*/
+}
+/******************************************************************************/
+.modal-window p{
+    color: blue;
+    padding: 10px;
+}
+.modal-window .title{
+    color: black;
+    padding: 10px;
+    
+}
+.modal-window{
+    background-color: black;
+    display: none;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 260;
+}
+.modal-window:target{
+    display:block;
+}

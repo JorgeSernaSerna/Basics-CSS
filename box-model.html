@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="boxModelStyle.css">
+</head>
+<body>
+    <article id="topic-section">
+        <h1>Practicing with CSS</h1>
+        <br>
+
+        <h2 class="h2 topics">Topics</h2>
+        <ul>
+            <li class="li selectors"><a class="text-item" href="index.html#topic-section">Selectors</a></li>
+            <li class="li box-model"><a class="text-item" href="box-model.html">Box Model</a>
+                <ul>
+                    <li><a href="box-model.html#borders">Borders</a></li>
+                    <li><a href="box-model.html#margin-padding">Margin & padding</a></li>
+                    <li><a href="box-model.html#inline-vs-block">Type of boxes Inline vs Block</a></li>
+                    <li><a href="box-model.html#displayNone-visibility">Hidding text options</a></li>
+                    <li><a href="box-model.html#overflow">Overflow - Float & Clear</a></li>
+                    <li><a href="box-model.html#box-sizing">Box-Sizing</a></li>
+                </ul>
+            </li>
+            <li class="li positions"><a class="text-item" href="positions.html">Position</a></li>
+            <li class="li example"><a class="text-item" href="example.html#start">Example</a></li>
+            <li class="li colors"><a class="text-item" href="colors.html">Colors</a></li>
+            <li class="li measurement"><a class="text-item" href="measurementUnits.html">Measurement Units</a></li>
+        </ul>
+    </article>
+    <br>
+    <!--***********************************************************************************-->
+
+    <article id="borders">
+        <h2 class="h2 borders">Borders</h2>
+        <div class="paragraphs">
+            <p class="first-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, voluptates praesentium, architecto aperiam quo deserunt et nam soluta eligendi, vero magni laudantium quibusdam velit voluptatum enim culpa eveniet aliquid. Officia!</p>
+            <br>
+            <p class="second-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, voluptates praesentium, architecto aperiam quo deserunt et nam soluta eligendi, vero magni laudantium quibusdam velit voluptatum enim culpa eveniet aliquid. Officia!</p>
+            <br>
+            <p class="third-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, voluptates praesentium, architecto aperiam quo deserunt et nam soluta eligendi, vero magni laudantium quibusdam velit voluptatum enim culpa eveniet aliquid. Officia!</p>
+            <br>
+            <p class="fourth-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, voluptates praesentium, architecto aperiam quo deserunt et nam soluta eligendi, vero magni laudantium quibusdam velit voluptatum enim culpa eveniet aliquid. Officia!</p>
+            <br>
+        </div>    
+    </article>
+    <hr>
+
+    <article id="margin-padding">
+        <h2 class="h2 margin-padding">Margin & Padding</h2>
+        <div class="container-inline">
+            <div class="box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, saepe. Eum dignissimos iste velit quis eaque sit consequatur, repellendus eos tempora iusto accusantium, magnam numquam ab incidunt dolorum, sapiente cupiditate!</div>
+            <div class="box2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, saepe. Eum dignissimos iste velit quis eaque sit consequatur, repellendus eos tempora iusto accusantium, magnam numquam ab incidunt dolorum, sapiente cupiditate!</div>
+            <div class="box2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, saepe. Eum dignissimos iste velit quis eaque sit consequatur, repellendus eos tempora iusto accusantium, magnam numquam ab incidunt dolorum, sapiente cupiditate!</div>
+            <div class="box2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, saepe. Eum dignissimos iste velit quis eaque sit consequatur, repellendus eos tempora iusto accusantium, magnam numquam ab incidunt dolorum, sapiente cupiditate!</div>
+        </div>
+    </article>
+    <hr>
+
+    <article id="inline-vs-block">
+        <h2 class="h2 box-type">Type of box "Inline & Block"</h2>
+        <br>
+        <span class="inline-box">This is an inline box</span>
+        <span class="description">!! If we apply padding to a "inline box" it will push other elements of its type but not "block boxes"</span>
+        <p class="block-box">This is a block-model box</p>
+    </article>
+    <br>
+
+    <article id="displayNone-visibility">
+        <h2 class="h2 disp-vis">Display-none & Visibility</h2>
+        <div class="secondary">
+            <p style="font-weight: bold; font-size: 20px;">These are properties that hide html elements.<br>Display none hides the whole element and its space is occupied by other elements<br>While Visibility hides the element but its space is reserved and it will look like an empty space on the screen</p>
+            <h3>Display-none</h3>
+            <div class="disp-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quibusdam,<br> assumenda animi molestias veritatis reiciendis molestiae omnis iure, <br>eaque pariatur voluptatum cum quis quas consequuntur necessitatibus natus amet? Qui, velit!</div>
+            <p class="hide-explanation">Just here on this position, there is a text inside a "div" label and it's hidden using the "display: none" property</p>
+            <h3>Visibility</h3>
+            <div class="vis-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quibusdam,<br> assumenda animi molestias veritatis reiciendis molestiae omnis iure, <br>eaque pariatur voluptatum cum quis quas consequuntur necessitatibus natus amet? Qui, velit!</div>
+            <p class="hide-explanation">☝️☝️☝️ Just above, there is a text inside a "div" label and it's hidden using the "visibility: hidden" property</p>
+        </div>
+    </article>
+
+    <article id="overflow">
+        <h2 class="h2">Overflow - Float & Clear</h2>
+        <div class="secondary">
+            <div class="box-overflow1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ad laborum voluptas ipsam itaque eligendi eveniet veritatis molestias quidem, labore natus sed non provident repellat rem a quam tenetur nemo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet delectus nostrum, unde eos eveniet consequatur reiciendis, totam blanditiis perferendis distinctio rem fugiat. Voluptas quia alias optio non magni, quod sunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae mollitia iure asperiores veritatis reiciendis quia numquam! Vero inventore recusandae fugiat tenetur reiciendis numquam dolore tempore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis impedit esse amet illo ipsa reprehenderit? Dicta magnam, nostrum tempora quam cupiditate repellat. Minima earum omnis magni esse ab dolorem saepe. officia, quidem doloremque, nisi assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur minus suscipit numquam exercitationem? Maiores exercitationem enim, quia fuga, sunt error voluptatibus unde sapiente similique ducimus quaerat expedita magnam quas!</div>
+            <div class="box-overflow2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ad laborum voluptas ipsam itaque eligendi eveniet veritatis molestias quidem, labore natus sed non provident repellat rem a quam tenetur nemo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet delectus nostrum, unde eos eveniet consequatur reiciendis, totam blanditiis perferendis distinctio rem fugiat. Voluptas quia alias optio non magni, quod sunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae mollitia iure asperiores veritatis reiciendis quia numquam! Vero inventore recusandae fugiat tenetur reiciendis numquam dolore tempore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis impedit esse amet illo ipsa reprehenderit? Dicta magnam, nostrum tempora quam cupiditate repellat. Minima earum omnis magni esse ab dolorem saepe. officia, quidem doloremque, nisi assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur minus suscipit numquam exercitationem? Maiores exercitationem enim, quia fuga, sunt error voluptatibus unde sapiente similique ducimus quaerat expedita magnam quas!</div>
+        </div>
+    </article>
+    <div class="fixer"></div>
+
+    <article id="box-sizing">
+        <h2 class="h2">Box-Sizing</h2>
+        <div class="secondary">
+            <p class="box-sizing-one">Here we are applying content-box</p>
+            <p class="box-sizing-two">Here we are applying border-box</p>
+        </div>
+    </article>
+</body>
+</html>
