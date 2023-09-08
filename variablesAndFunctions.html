@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos/variables.css" rel="stylesheet">
+    <title>Variables css</title>
+</head>
+<body>
+    <header></header>
+    <div class="TheVeryBeginning">
+
+        <h1>Practicing with CSS<br><span style="color:tomato;">Variables & Functions</span></h1>
+
+        <article id="topicSection">
+            <h2 class="bg-greenYellow">Topics</h2>
+                <ul>
+                    <li class="li selectors"><a class="text-item" href="index.html">Selectors</a></li>
+                    <li class="li box-model"><a class="text-item" href="box-model.html">Box Model</a></li>
+                    <li class="li positions"><a class="text-item" href="positions.html">Position</a></li>
+                    <li class="li example"><a class="text-item" href="example.html#start">Example</a></li>
+                    <li class="li colors"><a class="text-item" href="colors.html">Colors</a></li>
+                    <li class="li measurement"><a class="text-item" href="measurementUnits.html">Measurement Units</a></li>
+                    <li class="li variables"><a class="text-item" href="variablesAndFunctions.html">Custom Properties (Variables)</a></li>
+                    <li class="li fonts-texts"><a class="text-item" href="fonts-texts.html">Fonts & Texts</a></li>
+                    <li class="li outlines"><a class="text-item" href="outlines.html">Outlines</a></li>
+
+
+                </ul>
+        </article>
+
+        <!--******************************************************************************+-->
+        
+        <h2>Variables</h2>
+        <div class="parent-container">
+            <section class="child-container-1">
+                <p class="child-container-2">
+                    Las custom properties o variables se declaran dentro de los selectores <br>
+                    y su alcance o scope se extiende a los elementos hijos y nietos del <br>
+                    contenedor donde se ha declarado <br><br>
+                    SINTAXIS<br><br>
+                        <span style="color:darkred">.padre{<br> --bg-color-parent: red;<br> }</span><br><br>
+                        Se ha declarado la variable y se implementará en hijo <br><br>
+                        IMPLEMENTACIÓN<br><br>
+                        <span style="color: darkred">.hijo{<br>background-color: var(--bg-color-parent)}</span><br><br>
+                        Se pueden declarar variables como si fueran de ambito global de 2 maneras <br>
+                        La primera consiste en declararlas dentro de:<br><br>
+                        <span style="color:blueviolet">html{<br> --variable1: 32px<br> --variable2: pink<br>}</span><br><br>
+                        La segunda es mas efectiva por el tipo de selector y su especificidad y sería así:<br><br>
+                        <span style="color: blueviolet">:root{<br> --variable1: 32px<br> --variable2: pink<br>}</span>
+                </p>
+            </section>
+        </div>
+
+        <h2>Funciones</h2>
+        <div>
+            <h4>Funcion var()</h4> <!--***********************************************-->
+            <p>
+                El primer caso donde vimos una función fue cuando invocamos una variable <br>
+                o custom property<br><br>
+                <span style="color: yellowgreen">.hijo{<br>background-color: var(--variableColor)<br>}</span><br><br>
+                Aquí el argumento de la funcion <span style="color: yellowgreen">var(--VariableColor)</span> Es<br>
+                como tal la variable que se declaró previamente
+            </p>
+            <h4>Function url()</h4> <!--***********************************************-->
+            <p>
+                Un caso donde se manda a llamar ésta función es cuando dentro de una hoja de<br>
+                estilos, llamamos a otra hoja de estilos. No solo carga hojas de estilo,<br>
+                sino contenido externo en general<br><br>
+                <span style="color:blueviolet">@import</span> <span style="color: yellowgreen">url("hola.css")</span>
+            </p>
+            <h4>Funcion calc()</h4> <!--***********************************************-->
+            <p>
+                Esta función sirve para hacer calculos aritmeticos<br><br>
+
+                En el siguiente ejemplo se tiene un "box-sizing: border-box;" lo cual
+                quiere decir que el tamaño de la caja sera fijo y si se añaden margenes
+                o padding, la caja mantendra su tamaño.<br><br>
+
+                En el ejemplo se desbordan los numeros ya que la caja equivale a 10ch y 
+                se le ha asignado un padding de 2 rem por lado y tenemos la 
+                 propiedad box-sizing
+
+                
+            </p>
+            <div class="ch-10">
+                1234567890
+            </div>
+            <p>
+                Este problema se resuelve con el siguiente calculo:<br><br>
+                El width sera el espacio de 10 caracteres mas el padding de 2 rem de ambos lados<br><br>
+
+                <span style="color:yellowgreen">.etiqueta{<br>
+                --paddingSize: 2rem;<br>--numCaracteres: 10ch;<br>
+                font-size: 2rem;<br>
+                padding: var(--paddingSize);<br>
+                width: <span style="color:yellow">calc(var(--numCaracteres) + var(--paddingSize) * 2);</span><br>}</span>
+            </p>
+            <div class="ch2-10">
+                1234567890
+            </div>
+            <p>
+                *************** PONER ESPACIOS ENTRE OPERADORES PARA QUE FUNCIONE calc( ) *****************
+            </p>
+            <h4>Finciones max( )  &  min( )</h4> <!--***********************************************-->
+            <p>
+                Estas funciones reciben 2 o más parametros (por decirlo de alguna manera) 
+                y en el caso de max( ) tomara el valor maximo. Y en el caso de min( ) 
+                tomara el valor minimo<br>
+                Un caso de uso puede ser al asignar 2 tamaños distintos de un elemento y este sera 
+                tomado dependiendo del tamaño de pantalla donde se proyecta el sitio web
+            </p>
+            <h4>Finción clamp( )</h4> <!--***********************************************-->
+            <p>
+                Esta función es util cuando se trabaja con responsive design.
+                Recibe 3 argumentos que equivalen a tamaños distintos de un elemento html
+                y conforme crece la pantalla o cambia su tamaño, se van alternando los 
+                distintos tamaños que fueron ingresados como args.<br><br>
+
+                <span style="color:yellowgreen">.h1{<br>
+                    font-size: clamp(2rem, 20vw, 3rem);<br>
+                }
+            </p>
+
+        </div>
+    </div>
+    
+    
+</body>
+</html>

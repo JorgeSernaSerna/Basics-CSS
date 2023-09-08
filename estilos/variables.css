@@ -1,0 +1,62 @@
+:root{
+    font-family: system-ui;
+    font-size: 24px;
+    --bg-titles: rgb(33, 107, 82);
+    --bg-ex-calc: aqua;
+}
+
+/*    Code para aplicar border-box a todo el documento
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+*/
+
+body{
+    margin: 0;
+}
+.TheVeryBeginning{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: bisque;
+}
+.text-item{
+    text-decoration: none;
+}
+.text-item:hover{
+    color: var(--bg-titles)
+}
+h2{
+    background-color: var(--bg-titles);
+}
+h4{
+    background-color: rgb(150, 236, 207);
+    color: rgb(42, 11, 84);
+}
+
+.ch-10{
+    background-color: var(--bg-ex-calc) !important;
+    font-size: 2rem;
+    box-sizing: border-box;
+    width: 10ch;
+    padding: 2rem;
+}
+
+.ch2-10{
+    --padding: 2rem;
+    --numCaracteres: 10ch;
+
+    background-color: var(--bg-ex-calc);
+    font-size: 2rem;
+    box-sizing: border-box;
+
+    padding: var(--padding);
+    width: calc(var(--numCaracteres) + var(--padding) * 2)
+}

@@ -5,6 +5,19 @@
 html{
     scroll-behavior: smooth;
 }
+/*    Code para aplicar border-box a todo el documento
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+*/
 body{
     margin: 0;
 }

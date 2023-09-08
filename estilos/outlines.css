@@ -1,0 +1,81 @@
+/* The very beginning START ********************************************************     */
+*{
+    font-family: system-ui;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+h1{
+    
+    text-align: center;
+}
+h2{
+    padding: 3px 15px;
+    
+}
+.content-article{
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+.bg-first{
+    background-color: rgb(140, 22, 230);
+}
+.bg-second{
+    background-color:rgb(175, 102, 231);
+}
+.bg-third{
+    background-color:rgb(194, 121, 212);
+}
+.bg-fourth{
+    background-color:rgb(235, 181, 246);
+}
+#topic-section a{
+    font-size: 25px;
+    text-decoration: none;
+}
+/* The very beginning END ********************************************************     */
+.border-box{
+    width:300px;
+    height:300px;
+    border: thin black solid;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.a{
+    border-radius: 50px;
+    background-color: khaki;
+}
+.b{
+    border-bottom-left-radius: 50px;
+    background-color: rgb(234, 155, 237);
+}
+.c{
+    border-top-right-radius: 50px;
+    background-color: rgb(132, 235, 208);
+}
+.d{
+    border-radius: 20px 70px;
+    background-color: rgb(235, 201, 132);
+}
+.e{
+    border-radius: 20px 70px 0;
+    background-color: rgb(132, 235, 163);
+}
+.f{
+    border-radius: 50%;
+    background-color: rgb(234, 149, 162);
+}
+.g{
+    border-radius: 20px / 70px ;
+    background-color: khaki;
+}
+.h{
+    border-radius: 20px 40px/ 60px;
+    background-color: rgb(234, 155, 237);
+}

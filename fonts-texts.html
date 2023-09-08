@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geostar&display=swap" rel="stylesheet">
+
+    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="stylesheet" href="estilos/fonts-textsStyle.css">
+    <!--Para que los iconos respeten el tamaño de la fuente, el link de css debe de
+    colocarse despues de los links de fonts ***************************************-->
+    <title>fonts & texts</title>
+</head>
+
+<body>
+    <div class="theVeryBeginning">
+        <h1>Practicing with CSS<br><span style="color:tomato;">Fonts & Texts</span></h1>
+        <br>
+        <article id="topic-section">
+            <h2>Topics</h2>
+            <ul>
+                <li class="li selectors"><a class="text-item" href="index.html">Selectors</a></li>
+                <li class="li box-model"><a class="text-item" href="box-model.html">Box Model</a></li>
+                <li class="li positions"><a class="text-item" href="positions.html">Position</a></li>
+                <li class="li example"><a class="text-item" href="example.html#start">Example</a></li>
+                <li class="li colors"><a class="text-item" href="colors.html">Colors</a></li>
+                <li class="li measurement"><a class="text-item" href="measurementUnits.html">Measurement Units</a></li>
+                <li class="li variables"><a class="text-item" href="variablesAndFunctions.html">Custom Properties (Variables)</a></li>
+                <li class="li fonts-texts"><a class="text-item" href="fonts-texts.html">Fonts & Texts</a></li>
+                <li class="li outlines"><a class="text-item" href="outlines.html">Outlines</a></li>
+
+            </ul>
+        </article>
+
+
+        <div>
+            
+            <div class="internal-content">
+                <!--******** FUENTES  **********-->
+                <div class="fonts">
+                    <h2 class="h2-main">Fonts</h2>
+                    <!--******** FUENTES iNTERNAS  **********-->
+                    <div class="intern">
+                        <h2>Internal fonts</h2>
+                        <h3>font-family</h3>
+                        <p>
+                            Por defecto CSS asigna <span style="color: aqua;">"""  Georgia, 'Times New Roman', 
+                            Times, serif  """</span> como fuente para todos los textos.<br>
+                            Las comas significan que cuando la primer opción no este disponible
+                            (Georgia), entonces tomará la segunda (Times New Roman) y asi 
+                            sucesivamente<br><br>
+
+                            font-family: monospace 👇
+
+                            <div class="fnt">
+                                <p style="font-family: monospace">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo velit eligendi sapiente odio corrupti quae, maiores vel reprehenderit consequuntur quisquam eaque asperiores veritatis dolorum laboriosam magni dolores qui. At, qui.
+                                </p>  
+                            </div>
+                        </p>
+
+                        <h3>font-variant</h3>
+                        <p>
+                            small-caps sirve para convertir todo el texto en mayusculas
+                            SYNTAXIS:
+                        </p><br>
+                        <div class="css-box">
+                            <p class="css-code">
+                                <span style="color:darkturquoise">
+                                    .label{<br>
+                                        font-variant: small-caps;<br>
+                                    }
+                                </span>
+                            </p>
+                        </div>
+                        
+                        <h3>line-height</h3>
+                        <p>
+                            En procesadores de texto como word, esto se conoce como interlineado.
+                            Al asignarle valor no se pone ninguna unidad de medida                     
+                        </p><br>
+                        <div class="css-box">
+                            <p class="css-code">
+                                <span style="color:darkturquoise">
+                                    .label{<br>
+                                        line-height: 2;<br>
+                                    }
+                                </span>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <!--******** FUENTES EXTERNAS  **********-->
+                    <div class="extern">
+                        <h2>External Fonts</h2>
+                        <h3>Fuentes almacenadas en local</h3>
+                        <p>Los archivos de fuentes que se cargan en el sistema son de formato 
+                            "woff -- Web Open Font Format". Se cargaran en carpeta de assets
+                            y se importa en archivo CSS.<br>
+                            Para importar se escribe el siguiente codigo:<br><br>
+                        </p>
+                        <p class="css-code">
+                            <span style="color:darkturquoise">
+                            <span style="color:blueviolet">@font-face</span>{
+                                        font-family: "NewFont"; </span>---- se asigna nombre a la fuente<span style="color:darkturquoise">
+                                        src: url("/assets/NewFont.woff") format("woff")
+                            }<br><br>
+                            .label{
+                                    font-family: "NewFont";
+                            }
+                            </span> 
+                        </p>     
+                        <br><br>
+                        <p>En .label ya se esta utilizando la nueva fuente que se cargo en el programa.
+                        </p>
+                        <hr>
+                        <h3>fuente de google fonts</h3>
+                        <p class="fnt">Esta fuente se ha importado desde "google fonts".
+                            Solo se copian y pegan las lineas de codigo con etiqueta "link" en el
+                            head del archivo html
+                        </p><br><br>
+                        <p class="links">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;<br>
+                            &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;<br>
+                            &lt;link href="https://fonts.googleapis.com/css2?family=Geostar&display=swap" rel="stylesheet"&gt;
+                        </p><br><br>
+                        <h3>Propiedad "font-display" para <span style="color:blueviolet;">@font-face</span></h3>
+                        <p>Hace referencia a la manera en que se introduce una fuente al cargar el navegador.
+                        Es decir cuando se ingresa una pagina puede que la fuente se descargue
+                        lentamente y en este transcurso se realiza alguna acción con esta 
+                        propiedad</p><br>
+                        <ul>
+                            <li>Auto -- despliega Block</li>
+                            <li>Block -- no muestra texto hasta que se carga la fuente asignada</li>
+                            <li>Swap -- carga fuente alternativa mientras carga la fuente asignada</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--******** PROPIEDADES DE TEXTO  **********--> 
+                <div class="text-properties">
+                    <h2 class="h2-main">Propiedades de "text"</h2>
+                    <div class="content">
+                        <ul>
+                            <li>text-align -- es la alineación del texto right, left, justify</li>
+                            <li>text-decoration -- es el underline. none para no tener decoracion</li>
+                            <li>text-indent -- hace sangria/espaciado en primer parrafo</li>
+                            <li>text-overflow -- para esta propiedad es nesecario activar otras
+                                propiedades<br>
+                                <span style="color:blueviolet">text-overflow: elipsis;</span>
+                            </li>
+                            <li>En el caso de elipsis pone puntos suspensivos en vez de que la caja muestre todo lo que alcance</li>
+                            <ul>
+                                <li style="color:blueviolet">overflow : hidden;</li>
+                                <li>Cuando se desborda el texto de la caja, se ocultará</li>
+                                <li style="color:blueviolet">white-space: nowrap;</li>
+                                <li>Si la caja tiene un ancho definido y esta crece por el
+                                    tamaño del texto, white-space acomoda en una sola linea
+                                </li>
+                            </ul>
+                            <div class="overflow">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est magnam, pariatur dolores omnis quaerat dolore odio soluta quae impedit eos quidem cumque molestias nemo error eum commodi culpa exercitationem inventore.</div>
+                            <li>text-transform -- Capitalize/ UPPER CASE/ lower case</li>
+                            <li>letter-spacing -- Espacio entre letras, cualquier unidad de medida</li>
+                            <li>white-space -- trabaja con los espacios en el texto</li>
+                            <ul>
+                                <li style="color:blueviolet">white-space: pre;</li>
+                                <li>Respeta los espacios en blanco que asignamos en el html incluidos los 
+                                    saltos de linea sin usar &lt;br&gt;
+                                </li>
+                                <li style="color:blueviolet">white-space: nowrap;</li>
+                                <li>Quita todos los espacios en blanco y pone todo el texto en una
+                                    sola linea
+                                </li>
+                            </ul>
+                            <li>word-spacing -- Espacio entre palabras</li>
+                        </ul>
+                    </div>
+                </div>               
+                
+                
+
+
+                <h2 class="h2-main">Iconos</h2>
+                <div class="container-inline">
+                    <div class="card-icon erste">
+                    <h4>Icons from google-fonts</h4>
+                    <hr style="background-color: black;">
+                    <span class="material-symbols-outlined">
+                        deployed_code
+                    </span>
+                    <span class="material-symbols-outlined">
+                        rocket_launch
+                    </span>
+                    <span class="material-symbols-outlined">
+                        coronavirus
+                    </span>
+                    <span class="material-symbols-outlined">
+                        heart_broken
+                    </span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos laudantium repellat dignissimos, exercitationem amet mollitia architecto perferendis consequatur aliquam deserunt atque, dolorum id, cupiditate et maxime. Et, ipsa eum?</p>
+                    </div>
+
+                    <div class="card-icon zweite">
+                        <h4>Second icons</h4>
+                        <hr>
+                    </div>
+
+                    <div class="card-icon dritte">
+                        <h4>Third icons</h4>
+                        <hr>
+                    </div>
+                </div><br><br>
+                <p class="links">&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" &gt;<br>
+                    <br>
+                    &lt;link rel="stylesheet" href="fonts-textsStyle.css"&gt;
+                </p><br><br>
+                <p>
+                    Se han importado el link para los iconos !es importante tener este orden en
+                    los link para que los iconos respeten las especificaciones de la fuente. Es decir
+                    los iconos no son imagenes, sino caracteres como letras y simbolos y por ende toman
+                    en cuenta las propiedades de texto. Siempre y cuando se siga el orden en la importación
+                    de CDNs. <br><br>
+                    Posteriormente se llaman a los iconos mencionando un nombre de clase en etiquetas 
+                    &lt;span&gt; y un texto que hace referencia a los mismos.
+                </p><br><br>
+                <p class="links">&lt;span class="material-symbols-outlined"&gt;<br>
+                    rocket_launch
+                    <br>
+                    &lt;/span&gt;<br><br>
+                    &lt;span class="material-symbols-outlined"&gt;<br>
+                    heart_broken
+                    <br>
+                    &lt;/span&gt;<br>
+                </p><br><br>
+                <p>En los estilos CSS se pueden ajustar algunas caracteristicas de los iconos
+                    como el tamaño, el peso y la intensidad. Y a su vez respetara las
+                    caracteristicas propias de la fuente
+                </p><br><br>
+                <p class="links css-code">
+                    <span style="color:darkturquoise">.material-symbols-outlined{
+                        font-variation-settings:
+                        <span style="color:chocolate">'FILL' 0,
+                        'wght' 800,
+                        'GRAD' 0,
+                        'opsz' 100</span>
+                    }</span>
+                </p>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

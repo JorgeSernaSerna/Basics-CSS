@@ -1,24 +1,71 @@
+/* The very beginning START ********************************************************     */
 *{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.bg-greenYellow{
-    background-color: greenyellow;
-}
-.bg-aquamarine{
-    background-color:aquamarine;
-}
-.bg-orange{
-    background-color:rgb(216, 177, 99);
+    font-family: system-ui;
+    
 }
 html{
     scroll-behavior: smooth;
 }
+body{
+    margin: 0;
+}
 h1{
-    font-size: 50px;
+    
     text-align: center;
 }
 h2{
-    padding: 2px;
+    padding: 3px 15px;
+    
+}
+.content-article{
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+.bg-first{
+    background-color: rgb(140, 22, 230);
+}
+.bg-second{
+    background-color:rgb(175, 102, 231);
+}
+.bg-third{
+    background-color:rgb(194, 121, 212);
+}
+.bg-fourth{
+    background-color:rgb(235, 181, 246);
+}
+/* The very beginning END ********************************************************     */
+
+
+
+
+/*    Code para aplicar border-box a todo el documento
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+*/
+
+
+.links{
+    background-color: midnightblue;
+    color: gold;
+    border-radius: 5px;
+    padding: 1em;
+    margin: auto;
+    white-space: pre;
+    font-weight: bold;
+}
+.links-width-1{
+    width: 60%;
+}
+.links-width-2{
+    width: 35%;
 }
 .text-15{
     font-size: 15px;
@@ -78,5 +125,8 @@ h2{
 #topic-section a{
     font-size: 25px;
     text-decoration: none;
+}
+.double-container{
+    display: flex;
 }
 

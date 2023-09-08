@@ -4,6 +4,19 @@
 html{
     scroll-behavior: smooth;
 }
+/*    Code para aplicar border-box a todo el documento
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+*/
 #topic-section a{
     font-size: 25px;
     text-decoration: none;
