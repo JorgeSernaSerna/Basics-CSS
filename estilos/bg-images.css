@@ -1,0 +1,99 @@
+/* The very beginning START ********************************************************     */
+*{
+    font-family: system-ui;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+h1{
+    
+    text-align: center;
+}
+/* h2{
+    padding: 3px 15px;
+    
+} 
+.content-article{
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}*/
+.title-section{
+    padding: 3px;
+    background-color: purple;
+    color: rgb(241, 187, 215);
+}
+#topic-section a{
+    font-size: 25px;
+    text-decoration: none;
+    
+}
+li{
+    list-style: none;
+}
+/* The very beginning END ********************************************************     */
+.code{
+    background-color: midnightblue;
+    color: gold;
+    border-radius: 5px;
+    padding: 1em;
+    width: 40%;
+    margin: auto;
+}
+.description-text{
+    width: 50%;
+    margin: auto;
+}
+.box-bg-img{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border:medium dashed black;
+    background-color: aquamarine;
+    background-image: url(../assets/img1.JPG); /*original img size 2736 * 3648px */
+}
+.box-bg-size{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border:thick dashed black;
+    background-color:darkorange;
+    background-image: url(../assets/img1.JPG); /*original img size 2736 * 3648px */
+    background-size: cover; /*se asegura de que se cubra todo el contenedor mostrando ya sea
+    una parte de la imagen y sin deformar dimensiones*/
+}
+.box-bg-size2{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border:thick dashed black;
+    background-color:darkorange;
+    background-image: url(../assets/img1.JPG); /*original img size 2736 * 3648px */
+    background-size: contain;/*se asegura que la imagen completa se muestre dentro del contenedor
+    aunque esta no cubra en su totalidad el contenedor*/
+}
+.box-bg-repeat{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border:thick dashed black;
+    background-color:darkorange;
+    background-image: url(../assets/img1.JPG); /*original img size 2736 * 3648px */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bg-pstn-father{
+    width: 950px;
+    margin: auto;
+}
+.box-bg-position{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border:thick dashed black;
+    background-color:darkorange;
+    background-image: url(../assets/img1.JPG); /*original img size 2736 * 3648px */
+}
