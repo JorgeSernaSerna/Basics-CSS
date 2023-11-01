@@ -9,7 +9,7 @@ html{
 body{
     margin: 0;
 }
-h1{
+h1, h3{
     
     text-align: center;
 }
@@ -43,6 +43,9 @@ li{
     width: 40%;
     margin: auto;
 }
+.subtitle{
+    color:rgb(255, 0, 0) !important;
+}
 .description-text{
     width: 50%;
     margin: auto;
@@ -62,10 +65,19 @@ li{
     border:thick dashed black;
     background-color:darkorange;
     background-image: url(../assets/img1.JPG); /*original img size 2736 * 3648px */
+    background-size: 200px 300px;
+}
+.box-bg-size2{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border:thick dashed black;
+    background-color:darkorange;
+    background-image: url(../assets/img1.JPG); /*original img size 2736 * 3648px */
     background-size: cover; /*se asegura de que se cubra todo el contenedor mostrando ya sea
     una parte de la imagen y sin deformar dimensiones*/
 }
-.box-bg-size2{
+.box-bg-size3{
     width: 400px;
     height: 400px;
     margin: auto;

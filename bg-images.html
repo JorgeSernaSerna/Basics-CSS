@@ -31,33 +31,57 @@
         <br class="bgs">
             <h2 class="h2 title-section">Backgrounds</h2></br>
 
-
+            <h3>background-image</h3>
             <div class="box-bg-img"></div></br>
-            <p class="code">background-size: url(../ubicacion/img1.jpg)</p></br>
+            <p class="code">background-image: url(../ubicacion/img1.jpg)</p></br>
             <hr>
 
-            <div class="box-bg-size"></div><br>
-            <p class="description-text">Se asegura de que se cubra todo el contenedor mostrando ya sea
-                una parte de la imagen y sin deformar dimensiones</p><br>
-            <p class="code">background-size: cover</p></br>
-            <hr>
-
-            <div class="box-bg-size2"></div><br>
-            <p class="description-text">Se asegura que la imagen completa se muestre dentro del contenedor
-                aunque esta no cubra en su totalidad el contenedor</p><br>
-            <p class="code">background-size: contain</p></br>
-            <p class="description-text">Tambien se pueden establecer valores especificos
-                para determinar el tamaño del background. Se asigna valor para eje X y Y
-                aunque si se asigna un solo valor el siguiente lo genera automaticamente.
+            <h3>background-size</h3>
+            <p class="description-text">
+                Se le asignan valores ya sea en un eje o en los 2 
+                para determinar el tamaño de la imagen. En caso de asignarle 2 valores, el 
+                primero hace referencia a la anchura y el segundo a la altura. Si se le asigna 
+                solo un valor, el segundo se determina por defecto de acuerdo a la proporción 
+                de la imagen para no deformar las dimensiones.
             </p><br>
-            <p class="code">background-size: 200px;</p></br>
+            <div class="box-bg-size"></div><br>
+            <p class="code">background-size: 300px 200px; 
+                <br>background-size: 300px;
+            </p></br>
+
+            <h3 class="subtitle">background-size: cover</h3>
+            <p class="description-text">
+                Se asegura de que se cubra todo el contenedor mostrando ya sea
+                una parte de la imagen y sin deformar sus dimensiones. En este caso 
+                se cubre todo el contenedor y a su vez la anchura de la imagen 
+                tambien es mostrada completamente, mientras que la altura si se 
+                ve afectada y no se muestra completamente.
+            </p><br>
+            <div class="box-bg-size2"></div><br>
+            <p class="code">
+                background-size: cover;
+            </p>
+
+            <h3 class="subtitle">background-size: contain</h3>
+            <p class="description-text">Se asegura que la imagen completa se muestre dentro del contenedor
+                aunque esta no cubra en su totalidad el contenedor
+            </p><br>
+            <div class="box-bg-size3"></div><br>
+            <p class="code">background-size: contain;</p></br>
             <hr>
 
+            <h3>background-repeat</h3>
             <div class="box-bg-repeat"></div><br>
             <p class="description-text">De esta manera nos aseguramos de que la imagen
-                no se repita, se pueden asignar valores para que solo se repita en X o en Y
+                no se repita. En caso de asignarle unas dimenciones muy pequeñas en comparación 
+                del contenedor padre, se pueden generar repeticiónes en ambos ejes o 
+                solamente en uno, ya sea en x o en y.
             </p><br>
-            <p class="code">background-size: cover<br>background-repeat: no-repeat;</p></br>
+            <p class="code">
+                background-repeat: no-repeat;
+                <br>background-repeat: repeat-x;
+                <br>background-repeat: repeat-y;
+            </p></br>
             <hr>
 
             <div class="bg-pstn-father">
